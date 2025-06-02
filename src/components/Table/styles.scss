@@ -1,0 +1,64 @@
+@use "../../assets/scss/variables/color.scss" as colors;
+@use "../../assets/scss/function" as fn;
+@use "../../assets/scss/mixin" as mx;
+@use "../../assets/scss/variables/breakpoint.scss" as bp;
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+
+    tr:not(:first-child) {
+        height: fn.rem(72);
+    }
+
+    tr:first-child {
+        height: fn.rem(44);
+        text-align: center;
+    }
+
+    tr td {
+        border: 1;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+        font-size: fn.rem(14);
+        color: colors.$gray-4;
+
+        @include mx.mq(bp.$breakpoint-md, max) {
+            font-size: fn.rem(10);
+        }
+    }
+
+    tr th {
+        text-align: left;
+        font-size: fn.rem(14);
+        color: colors.$gray-4;
+        @include mx.font-san-francisco-pro-display-semibold;
+
+        @include mx.mq(bp.$breakpoint-md, max) {
+            font-size: fn.rem(10);
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+
+    tr:nth-child(even), thead .table__header {
+        background-color: colors.$gray-6 !important;
+    }
+
+    tr:nth-child(odd) {
+        background-color: colors.$white-1;
+    }
+
+    &__header {
+        border-top: 1px solid #ddd;
+    }
+
+    .loading {
+        margin: 0 auto;
+    }
+}
+
+.btn-view {
+    cursor: pointer;
+}

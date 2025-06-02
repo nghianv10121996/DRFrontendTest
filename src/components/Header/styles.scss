@@ -1,0 +1,20 @@
+@use "../../assets/scss/function" as fn;
+@use "../../assets/scss/variables/color.scss" as colors;
+@use "../../assets/scss/mixin" as mx;
+@use "../../assets/scss/variables/breakpoint.scss" as bp;
+
+.header {
+    padding: fn.rem(16);
+
+    @include mx.mq(bp.$breakpoint-md, max) {
+        padding: fn.rem(8);
+    }
+
+    &__title {
+       font-size: fn.rem(24);
+
+       @include mx.mq(bp.$breakpoint-md, max) {
+            font-size: fn.rem(16);
+       }
+    }
+}

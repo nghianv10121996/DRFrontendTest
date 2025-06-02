@@ -1,0 +1,148 @@
+@use "../../assets/scss/function"as fn;
+@use "../../assets/scss/variables/color.scss"as colors;
+@use "../../assets/scss/mixin"as mx;
+@use "../../assets/scss/variables/breakpoint.scss"as bp;
+
+.sidebar {
+  position: fixed;
+  background-color: colors.$body-bg;
+  border: 1px solid colors.$gray-2;
+  height: 100%;
+  z-index: 99;
+
+  &.\--open {
+    transform: translateX(0);
+  }
+
+  @include mx.mq(bp.$breakpoint-md, max) {
+    height: 100%;
+    transform: translateX(-100%);
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  @include mx.mq(bp.$breakpoint-md, max) {
+    padding: fn.rem(12) 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: fn.rem(10);
+    align-items: center;
+    padding: 0 fn.rem(14);
+
+    @include mx.mq(bp.$breakpoint-md, max) {
+      padding: 0;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: fn.rem(20);
+    align-items: center;
+    padding: fn.rem(26) 0;
+    border-top: 1px solid colors.$gray-1;
+    width: 100%;
+  }
+
+  &__profile {
+    width: fn.rem(48);
+    height: fn.rem(48);
+    border-radius: 50%;
+
+    @include mx.mq(bp.$breakpoint-md, max) {
+      width: fn.rem(36);
+      height: fn.rem(36);
+    }
+  }
+
+  &__logout {
+    width: fn.rem(40);
+    height: fn.rem(40);
+    border-radius: 50%;
+    display: flex;
+    border: 1px solid colors.$gray-1;
+    justify-items: center;
+    align-items: center;
+
+    @include mx.mq(bp.$breakpoint-md, max) {
+      width: fn.rem(36);
+      height: fn.rem(36);
+    }
+  }
+
+  &__btn-badge {
+    margin: fn.rem(16) 0;
+
+    @include mx.mq(bp.$breakpoint-md, max) {
+      width: fn.rem(36);
+      height: fn.rem(36);
+    }
+  }
+
+  &__btn-group {
+    width: fn.rem(56);
+    height: fn.rem(56);
+    background-color: colors.$orange-1;
+    border-radius: 50%;
+    border: none;
+
+    @include mx.mq(bp.$breakpoint-md, max) {
+      width: fn.rem(30);
+      height: fn.rem(30);
+    }
+
+    img {
+      margin: 0 auto;
+    }
+  }
+
+}
+
+.icon-sign-out {
+  @include mx.icons;
+  margin: 0 auto;
+}
+
+.icon-logo {
+  margin-top: fn.rem(24);
+  margin-bottom: fn.rem(56);
+
+  @include mx.mq(bp.$breakpoint-md, max) {
+    margin-bottom: fn.rem(18);
+    margin-top: fn.rem(16);
+    width: fn.rem(50);
+  }
+}
+
+.btn-menu {
+  position: absolute;
+  right: fn.rem(10);
+  top: fn.rem(20);
+  display: none;
+
+  .line {
+    width: fn.rem(30);
+    height: fn.rem(2);
+    background: colors.$gray-1;
+    margin: fn.rem(4) 0;
+  }
+
+  @include mx.mq(bp.$breakpoint-md, max) {
+    display: block;
+  }
+}

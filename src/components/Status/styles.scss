@@ -1,0 +1,66 @@
+@use "../../assets/scss/function"as fn;
+@use "../../assets/scss/mixin"as mx;
+@use "../../assets/scss/variables/color.scss"as colors;
+@use "../../assets/scss/variables/breakpoint.scss"as bp;
+
+.status {
+    display: flex;
+    align-items: flex-start;
+
+    &__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: fn.rem(4px);
+        font-size: fn.rem(14);
+        padding: fn.rem(4) fn.rem(12);
+        border-radius: fn.rem(24);
+        @include mx.font-san-francisco-pro-display-bold;
+
+        &.\--active {
+            color: colors.$success;
+            background-color: colors.$success-bg;
+        }
+
+        &.\--not-active {
+            color: colors.$warning;
+            background-color: colors.$warning-bg;
+        }
+
+        &.\--block {
+            color: colors.$block;
+            background-color: colors.$block-bg;
+        }
+
+        @include mx.mq(bp.$breakpoint-md, max) {
+            font-size: fn.rem(8);
+             padding: fn.rem(4) fn.rem(4);
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+
+    &__dot {
+        width: fn.rem(5);
+        height: fn.rem(5);
+        border-radius: 50%;
+
+        &.\--active {
+            background-color: colors.$success;
+        }
+
+        &.\--not-active {
+            background-color: colors.$warning;
+        }
+
+        &.\--block {
+            background-color: colors.$block;
+        }
+
+        @include mx.mq(bp.$breakpoint-md, max) {
+            width: fn.rem(3);
+            height: fn.rem(3);
+        }
+    }
+}

@@ -1,0 +1,122 @@
+@use "../../assets/scss/variables/color.scss"as colors;
+@use "../../assets/scss/mixin"as mx;
+@use "../../assets/scss/function"as fn;
+@use "../../assets/scss/variables/breakpoint.scss"as bp;
+
+.dashboard {
+    display: flex;
+    flex: 1;
+    padding: fn.rem(16);
+    background-color: colors.$gray-2;
+
+    @include mx.mq(bp.$breakpoint-md, max) {
+        padding: fn.rem(8);
+    }
+
+    &__container {
+        background-color: colors.$white-1;
+        padding: fn.rem(16) fn.rem(24);
+        border-radius: fn.rem(8);
+        width: 100%;
+
+        .line {
+            display: block;
+
+            @include mx.mq(bp.$breakpoint-md, max) {
+                display: none;
+            }
+        }
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: fn.rem(16);
+
+        &-search {
+            flex: 1;
+
+            &.\--reset {
+                flex: none
+            }
+
+            @include mx.mq(bp.$breakpoint-md, max) {
+                width: 100%;
+            }
+        }
+
+        &-btn-group {
+            display: flex;
+            gap: fn.rem(16);
+
+            @include mx.mq(bp.$breakpoint-md, max) {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .button {
+                @include mx.mq(bp.$breakpoint-md, max) {}
+            }
+        }
+
+        @include mx.mq(bp.$breakpoint-md, max) {
+            flex-direction: column;
+        }
+    }
+
+    &__filter {
+        display: flex;
+        align-items: center;
+        gap: fn.rem(12);
+        margin-top: fn.rem(12);
+
+        &-title {
+            @include mx.font-san-francisco-pro-display-semibold;
+            font-size: fn.rem(14);
+
+            @include mx.mq(bp.$breakpoint-md, max) {
+                font-size: fn.rem(12);
+            }
+        }
+    }
+
+    &__table {
+        margin-top: fn.rem(12);
+
+        @include mx.mq(bp.$breakpoint-md, max) {
+            margin-top: fn.rem(8);
+        }
+    }
+
+    &__pagination {
+        margin-top: fn.rem(18);
+        padding: fn.rem(18.5) fn.rem(24);
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid colors.$gray-5;
+
+        &-total {
+            .text {
+                font-size: fn.rem(14);
+                color: colors.$black-1;
+                @include mx.font-san-francisco-pro-display-regular;
+
+                @include mx.mq(bp.$breakpoint-md, max) {
+                    font-size: fn.rem(12);
+                }
+            }
+
+            .number {
+                margin: 0 fn.rem(8);
+                font-size: fn.rem(14);
+                color: colors.$orange-3;
+                @include mx.font-san-francisco-pro-display-medium;
+
+                @include mx.mq(bp.$breakpoint-md, max) {
+                    font-size: fn.rem(12);
+                }
+            }
+        }
+    }
+}

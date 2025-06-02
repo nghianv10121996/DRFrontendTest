@@ -1,0 +1,44 @@
+@use "./variables/font.scss" as fonts;
+@use "./variables/color.scss" as colors;
+@use "./mixin" as mx;
+
+html {
+  font-size: fonts.$default-rem;
+  background: colors.$body-bg;
+  color: colors.$body-txt;
+  min-height: 100%;
+  @include mx.font-san-francisco-pro-display-italic;
+}
+
+body {
+  margin: 0;
+  font-size: fonts.$size-default;
+  line-height: calc(23.4px / fonts.$size-default);
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+
+button {
+  display: inline;
+  border: none;
+  background-color: transparent;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+
+  &:not([src]),
+  &[src=""] {
+    display: none;
+  }
+}
+
+strong {
+  @include mx.font-san-francisco-pro-display-medium;
+}

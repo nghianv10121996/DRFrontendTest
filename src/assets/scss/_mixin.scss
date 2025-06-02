@@ -1,0 +1,73 @@
+@use './variables/font.scss' as fonts;
+@use "sass:math";
+
+@mixin font-face($name, $pathNotIncludeExt, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $name;
+    src: url("#{$pathNotIncludeExt}.woff") format("woff");
+    font-weight: $weight;
+    font-style: $style;
+    font-display: block;
+  }
+}
+
+@mixin font-smooth {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin mq($width, $type: min) {
+  @if math.is-unitless($width) {
+    $width: $width * 1px
+  }
+
+  @if $type == max {
+    $width: $width - 1px;
+  }
+
+  @media only screen and (#{$type}-width: $width) {
+    @content;
+  }
+}
+
+@mixin no-touch {
+  html.no-touchevents & {
+    @content;
+  }
+}
+
+@mixin font-san-francisco-pro-display-italic {
+  font-family: fonts.$san-francisco-pro-display;
+  font-weight: 400;
+}
+
+@mixin font-san-francisco-pro-display-bold {
+  font-family: fonts.$san-francisco-pro-display;
+  font-weight: 700;
+}
+
+@mixin font-san-francisco-pro-display-semibold {
+  font-family: fonts.$san-francisco-pro-display;
+  font-weight: 600;
+}
+
+@mixin font-san-francisco-pro-display-medium {
+  font-family: fonts.$san-francisco-pro-display;
+  font-weight: 500;
+}
+
+@mixin font-san-francisco-pro-display-regular {
+  font-family: fonts.$san-francisco-pro-display;
+  font-weight: 400;
+}
+
+
+@mixin icons {
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  @include font-smooth;
+}

@@ -1,0 +1,18 @@
+@use "../../assets/scss/function" as fn;
+@use "../../assets/scss/mixin" as mx;
+@use "../../assets/scss/variables/color.scss" as colors;
+
+.empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    &__text {
+        margin-top: fn.rem(13);
+        font-size: fn.rem(24);
+        color: colors.$gray-7;
+        @include mx.font-san-francisco-pro-display-regular;
+    }
+}

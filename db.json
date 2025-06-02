@@ -1,0 +1,614 @@
+{
+  "employeeList": [{
+      "id": "1",
+      "name": "Lana Steiner",
+      "userId": "#765973",
+      "phoneNumber": "0947211201",
+      "address": "Nhà Bè",
+      "position": "Giám sát",
+      "email": "abe@gmail.com",
+      "status": 3
+    },
+    {
+      "id": "2",
+      "name": "Candice Wu",
+      "userId": "#495093",
+      "phoneNumber": "0947211201",
+      "address": "Thành phố Thủ Đức",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 2
+    },
+    {
+      "id": "3",
+      "name": "Sophie Tran",
+      "userId": "#964133",
+      "phoneNumber": "0947211201",
+      "address": "Quận 5",
+      "position": "Giám sát",
+      "email": "abe@gmail.com",
+      "status": 1
+    },
+    {
+      "id": "4",
+      "name": "Olivia Rhye",
+      "userId": "#280101",
+      "phoneNumber": "0947211201",
+      "address": "Quận 11",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 3
+    },
+    {
+      "id": "5",
+      "name": "Olivia Rhye",
+      "userId": "#313131",
+      "phoneNumber": "0947211201",
+      "address": "Quận 11",
+      "position": "Giám sát",
+      "email": "abe@gmail.com",
+      "status": 2
+    },
+    {
+      "id": "6",
+      "name": "Phoenix Baker",
+      "userId": "#828721",
+      "phoneNumber": "0947211201",
+      "address": "Thành phố Thủ Đức",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 3
+    },
+    {
+      "id": "7",
+      "name": "Olivia Rhye",
+      "userId": "#103964",
+      "phoneNumber": "0947211201",
+      "address": "Nhà Bè",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 1
+    },
+    {
+      "id": "8",
+      "name": "Olivia Rhye",
+      "userId": "#871058",
+      "phoneNumber": "0947211201",
+      "address": "Quận 6",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 2
+    },
+    {
+      "id": "9",
+      "name": "Alex Lee",
+      "userId": "#105095",
+      "phoneNumber": "0947211201",
+      "address": "Hóc Môn",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 2
+    },
+    {
+      "id": "10",
+      "name": "Olivia Rhye",
+      "userId": "#766621",
+      "phoneNumber": "0947211201",
+      "address": "Quận 4",
+      "position": "Giám sát",
+      "email": "abe@gmail.com",
+      "status": 3
+    },
+    {
+      "id": "11",
+      "name": "Lana Steiner",
+      "userId": "#857073",
+      "phoneNumber": "0947211201",
+      "address": "Quận 4",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 1
+    },
+    {
+      "id": "12",
+      "name": "Ben Tran",
+      "userId": "#925794",
+      "phoneNumber": "0947211201",
+      "address": "Tân Bình",
+      "position": "Giám sát",
+      "email": "abe@gmail.com",
+      "status": 2
+    },
+    {
+      "id": "13",
+      "name": "Lana Steiner",
+      "userId": "#660082",
+      "phoneNumber": "0947211201",
+      "address": "Quận 3",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 2
+    },
+    {
+      "id": "14",
+      "name": "Candice Wu",
+      "userId": "#720653",
+      "phoneNumber": "0947211201",
+      "address": "Thành phố Thủ Đức",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 1
+    },
+    {
+      "id": "15",
+      "name": "Phoenix Baker",
+      "userId": "#653592",
+      "phoneNumber": "0947211201",
+      "address": "Hóc Môn",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 3
+    },
+    {
+      "id": "16",
+      "name": "Olivia Rhye",
+      "userId": "#607827",
+      "phoneNumber": "0947211201",
+      "address": "Quận 7",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 2
+    },
+    {
+      "id": "17",
+      "name": "Alex Lee",
+      "userId": "#766070",
+      "phoneNumber": "0947211201",
+      "address": "Quận 7",
+      "position": "Giám sát",
+      "email": "abe@gmail.com",
+      "status": 1
+    },
+    {
+      "id": "18",
+      "name": "Lana Steiner",
+      "userId": "#882408",
+      "phoneNumber": "0947211201",
+      "address": "Quận 3",
+      "position": "Giám sát",
+      "email": "abe@gmail.com",
+      "status": 2
+    },
+    {
+      "id": "19",
+      "name": "Sophie Tran",
+      "userId": "#256738",
+      "phoneNumber": "0947211201",
+      "address": "Quận 11",
+      "position": "Giám sát",
+      "email": "abe@gmail.com",
+      "status": 1
+    },
+    {
+      "id": "20",
+      "name": "Ben Tran",
+      "userId": "#784066",
+      "phoneNumber": "0947211201",
+      "address": "Quận 1",
+      "position": "Giám sát",
+      "email": "abe@gmail.com",
+      "status": 1
+    },
+    {
+      "id": "21",
+      "name": "Ben Tran",
+      "userId": "#448363",
+      "phoneNumber": "0947211201",
+      "address": "Bình Chánh",
+      "position": "Giám sát",
+      "email": "abe@gmail.com",
+      "status": 2
+    },
+    {
+      "id": "22",
+      "name": "Phoenix Baker",
+      "userId": "#951890",
+      "phoneNumber": "0947211201",
+      "address": "Thành phố Thủ Đức",
+      "position": "Giám sát",
+      "email": "abe@gmail.com",
+      "status": 1
+    },
+    {
+      "id": "23",
+      "name": "Phoenix Baker",
+      "userId": "#600860",
+      "phoneNumber": "0947211201",
+      "address": "Nhà Bè",
+      "position": "Giám sát",
+      "email": "abe@gmail.com",
+      "status": 3
+    },
+    {
+      "id": "24",
+      "name": "Alex Lee",
+      "userId": "#356765",
+      "phoneNumber": "0947211201",
+      "address": "Quận 3",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 2
+    },
+    {
+      "id": "25",
+      "name": "Sophie Tran",
+      "userId": "#962984",
+      "phoneNumber": "0947211201",
+      "address": "Bình Chánh",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 2
+    },
+    {
+      "id": "26",
+      "name": "Ben Tran",
+      "userId": "#335607",
+      "phoneNumber": "0947211201",
+      "address": "Bình Chánh",
+      "position": "Giám sát",
+      "email": "abe@gmail.com",
+      "status": 1
+    },
+    {
+      "id": "27",
+      "name": "Lana Steiner",
+      "userId": "#831139",
+      "phoneNumber": "0947211201",
+      "address": "Quận 5",
+      "position": "Giám sát",
+      "email": "abe@gmail.com",
+      "status": 3
+    },
+    {
+      "id": "28",
+      "name": "Alex Lee",
+      "userId": "#549200",
+      "phoneNumber": "0947211201",
+      "address": "Nhà Bè",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 1
+    },
+    {
+      "id": "29",
+      "name": "Alex Lee",
+      "userId": "#385713",
+      "phoneNumber": "0947211201",
+      "address": "Bình Chánh",
+      "position": "Giám sát",
+      "email": "abe@gmail.com",
+      "status": 2
+    },
+    {
+      "id": "30",
+      "name": "Minh Nguyen",
+      "userId": "#219912",
+      "phoneNumber": "0947211201",
+      "address": "Quận 1",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 2
+    },
+    {
+      "id": "31",
+      "name": "Phoenix Baker",
+      "userId": "#612142",
+      "phoneNumber": "0947211201",
+      "address": "Quận 6",
+      "position": "Giám sát",
+      "email": "abe@gmail.com",
+      "status": 2
+    },
+    {
+      "id": "32",
+      "name": "Alex Lee",
+      "userId": "#660838",
+      "phoneNumber": "0947211201",
+      "address": "Củ Chi",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 3
+    },
+    {
+      "id": "33",
+      "name": "Olivia Rhye",
+      "userId": "#948279",
+      "phoneNumber": "0947211201",
+      "address": "Nhà Bè",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 3
+    },
+    {
+      "id": "34",
+      "name": "Olivia Rhye",
+      "userId": "#405173",
+      "phoneNumber": "0947211201",
+      "address": "Tân Phú",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 2
+    },
+    {
+      "id": "35",
+      "name": "Minh Nguyen",
+      "userId": "#256099",
+      "phoneNumber": "0947211201",
+      "address": "Bình Chánh",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 3
+    },
+    {
+      "id": "36",
+      "name": "Sophie Tran",
+      "userId": "#187160",
+      "phoneNumber": "0947211201",
+      "address": "Tân Bình",
+      "position": "Giám sát",
+      "email": "abe@gmail.com",
+      "status": 3
+    },
+    {
+      "id": "37",
+      "name": "Lana Steiner",
+      "userId": "#960300",
+      "phoneNumber": "0947211201",
+      "address": "Quận 7",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 1
+    },
+    {
+      "id": "38",
+      "name": "Ben Tran",
+      "userId": "#358930",
+      "phoneNumber": "0947211201",
+      "address": "Thành phố Thủ Đức",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 3
+    },
+    {
+      "id": "39",
+      "name": "Alex Lee",
+      "userId": "#400644",
+      "phoneNumber": "0947211201",
+      "address": "Quận 3",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 3
+    },
+    {
+      "id": "40",
+      "name": "Sophie Tran",
+      "userId": "#236539",
+      "phoneNumber": "0947211201",
+      "address": "Quận 5",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 3
+    },
+    {
+      "id": "41",
+      "name": "Alex Lee",
+      "userId": "#596215",
+      "phoneNumber": "0947211201",
+      "address": "Quận 5",
+      "position": "Giám sát",
+      "email": "abe@gmail.com",
+      "status": 1
+    },
+    {
+      "id": "42",
+      "name": "Olivia Rhye",
+      "userId": "#889019",
+      "phoneNumber": "0947211201",
+      "address": "Củ Chi",
+      "position": "Giám sát",
+      "email": "abe@gmail.com",
+      "status": 2
+    },
+    {
+      "id": "43",
+      "name": "Minh Nguyen",
+      "userId": "#576637",
+      "phoneNumber": "0947211201",
+      "address": "Quận 4",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 3
+    },
+    {
+      "id": "44",
+      "name": "Ben Tran",
+      "userId": "#614815",
+      "phoneNumber": "0947211201",
+      "address": "Củ Chi",
+      "position": "Giám sát",
+      "email": "abe@gmail.com",
+      "status": 2
+    },
+    {
+      "id": "45",
+      "name": "Phoenix Baker",
+      "userId": "#115720",
+      "phoneNumber": "0947211201",
+      "address": "Quận 11",
+      "position": "Giám sát",
+      "email": "abe@gmail.com",
+      "status": 2
+    },
+    {
+      "id": "46",
+      "name": "Phoenix Baker",
+      "userId": "#149509",
+      "phoneNumber": "0947211201",
+      "address": "Bình Chánh",
+      "position": "Giám sát",
+      "email": "abe@gmail.com",
+      "status": 1
+    },
+    {
+      "id": "47",
+      "name": "Lana Steiner",
+      "userId": "#910564",
+      "phoneNumber": "0947211201",
+      "address": "Hóc Môn",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 1
+    },
+    {
+      "id": "48",
+      "name": "Olivia Rhye",
+      "userId": "#656569",
+      "phoneNumber": "0947211201",
+      "address": "Quận 11",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 1
+    },
+    {
+      "id": "49",
+      "name": "Candice Wu",
+      "userId": "#941985",
+      "phoneNumber": "0947211201",
+      "address": "Quận 11",
+      "position": "Nhân viên",
+      "email": "abe@gmail.com",
+      "status": 1
+    },
+    {
+      "id": "50",
+      "name": "Sophie Tran",
+      "userId": "#865399",
+      "phoneNumber": "0947211201",
+      "address": "Quận 5",
+      "position": "Giám sát",
+      "email": "abe@gmail.com",
+      "status": 1
+    }
+  ],
+  "province": [{
+      "id": "1",
+      "label": "Quận 1",
+      "value": "Quận 1"
+    },
+    {
+      "id": "2",
+      "label": "Quận 3",
+      "value": "Quận 3"
+    },
+    {
+      "id": "3",
+      "label": "Quận 4",
+      "value": "Quận 4"
+    },
+    {
+      "id": "4",
+      "label": "Quận 5",
+      "value": "Quận 5"
+    },
+    {
+      "id": "5",
+      "label": "Quận 6",
+      "value": "Quận 6"
+    },
+    {
+      "id": "6",
+      "label": "Quận 7",
+      "value": "Quận 7"
+    },
+    {
+      "id": "7",
+      "label": "Quận 8",
+      "value": "Quận 8"
+    },
+    {
+      "id": "8",
+      "label": "Quận 10",
+      "value": "Quận 10"
+    },
+    {
+      "id": "9",
+      "label": "Quận 11",
+      "value": "Quận 11"
+    },
+    {
+      "id": "10",
+      "label": "Quận 12",
+      "value": "Quận 12"
+    },
+    {
+      "id": "11",
+      "label": "Bình Thạnh",
+      "value": "Bình Thạnh"
+    },
+    {
+      "id": "12",
+      "label": "Gò Vấp",
+      "value": "Gò Vấp"
+    },
+    {
+      "id": "13",
+      "label": "Phú Nhuận",
+      "value": "Phú Nhuận"
+    },
+    {
+      "id": "14",
+      "label": "Tân Bình",
+      "value": "Tân Bình"
+    },
+    {
+      "id": "15",
+      "label": "Tân Phú",
+      "value": "Tân Phú"
+    },
+    {
+      "id": "16",
+      "label": "Bình Tân",
+      "value": "Bình Tân"
+    },
+    {
+      "id": "17",
+      "label": "Thành phố Thủ Đức",
+      "value": "Thành phố Thủ Đức"
+    },
+    {
+      "id": "18",
+      "label": "Hóc Môn",
+      "value": "Hóc Môn"
+    },
+    {
+      "id": "19",
+      "label": "Củ Chi",
+      "value": "Củ Chi"
+    },
+    {
+      "id": "20",
+      "label": "Bình Chánh",
+      "value": "Bình Chánh"
+    },
+    {
+      "id": "21",
+      "label": "Nhà Bè",
+      "value": "Nhà Bè"
+    },
+    {
+      "id": "22",
+      "label": "Cần Giờ",
+      "value": "Cần Giờ"
+    }
+  ]
+}

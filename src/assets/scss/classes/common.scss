@@ -1,0 +1,89 @@
+@use "../function"as fn;
+@use "../variables/color.scss"as colors;
+@use "../variables/breakpoint.scss"as bp;
+@use "../mixin"as mx;
+
+#app {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  .app-container {
+    display: flex;
+    background-color: colors.$body-bg;
+    min-height: 100%;
+    min-width: 100%;
+  }
+}
+
+
+.page {
+  flex: 1;
+  padding-left: fn.rem(92);
+
+  @include mx.mq(bp.$breakpoint-md, max) {
+    padding-left: 0;
+  }
+
+  .page-container {
+    max-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.line {
+  width: fn.rem(1);
+  height: fn.rem(24);
+  background-color: colors.$gray-3;
+}
+
+.side-bar {
+  min-width: fn.rem(90);
+}
+
+.\--overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+}
+
+.\--txt-uppercase {
+  text-transform: uppercase;
+}
+
+.\--txt-center {
+  text-align: center;
+}
+
+.\--center {
+  vertical-align: middle !important;
+  text-align: center !important;
+}
+
+.\--txt-none-decoration {
+  text-decoration: none;
+}
+
+.\--main-bg {
+  background: colors.$white-1;
+}
+
+.\--shadow {
+  border: 1px solid #BFBFBF;
+  background-color: white;
+}
+
+.\--button-shadow {
+  background-color: white;
+  box-shadow: 0px 1px 2px 0px #1018280D
+}

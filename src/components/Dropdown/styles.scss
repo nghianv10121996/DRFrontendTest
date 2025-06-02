@@ -1,0 +1,74 @@
+@use "../../assets/scss/function"as fn;
+@use "../../assets/scss/mixin"as mx;
+@use "../../assets/scss/variables/color.scss"as colors;
+@use "../../assets/scss/variables/breakpoint.scss" as bp;
+
+.dropdown {
+    cursor: pointer;
+    width: fn.rem(120);
+    max-height: fn.rem(36);
+
+    &__header {
+        position: relative;
+        border: 1px solid colors.$gray-3;
+        border-radius: fn.rem(8);
+        padding: fn.rem(4) fn.rem(10);
+        display: flex;
+        justify-content: space-between;
+
+        &-title {
+            margin: 0;
+            font-size: fn.rem(16);
+            color: colors.$gray-7;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            @include mx.font-san-francisco-pro-display-regular;
+
+            @include mx.mq(bp.$breakpoint-md, max) {
+                font-size: fn.rem(12);
+            }
+
+            &.\--active {
+                color: colors.$black-1;
+            }
+        }
+
+        &-icon {
+            @include mx.icons;
+
+            &.\--active {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__content {
+        margin-top: fn.rem(8);
+        position: absolute;
+        border: 1px solid colors.$gray-3;
+        border-radius: fn.rem(8);
+        left: 0;
+        right: 0;
+        top: 100%;
+        background-color: colors.$white-1;
+
+        &-item {
+            margin: 0;
+            font-size: fn.rem(16);
+            padding: fn.rem(4) fn.rem(10);
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            @include mx.font-san-francisco-pro-display-regular;
+
+             @include mx.mq(bp.$breakpoint-md, max) {
+                font-size: fn.rem(12);
+            }
+
+            &.\--active {
+                background-color: colors.$gray-3;
+            }
+        }
+    }
+}
